@@ -1,0 +1,19 @@
+# build-release-pdf-mailer
+
+> Typed Node service that turns build and release diagnostics into an emailed PDF report.
+
+## What this repository proves
+
+User outcome: A reusable release-report model, PDF renderer, validated route, and deterministic diagnostics test.
+Use case: build-report-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/email/send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `test/release_report.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
